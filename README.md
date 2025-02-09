@@ -7,3 +7,9 @@ To make it work, you need to install <b>[Node.js](https://nodejs.org/)</b>, and 
 npm i socket.io-client@2
 ```
 Copy the code above and paste it to PowerShell/Terminal.
+
+### Supported protocols
+```
+HTTP: 8081 (http://www.windows93.net:8081)
+HTTPS: 8088 (https://www.windows93.net:8088)
+```
