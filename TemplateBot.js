@@ -1,5 +1,5 @@
 const io = require("socket.io-client");
-const socket = io("https://www.windows93.net:8086", {
+const socket = io("https://www.windows93.net:8088", {
 	forceNew: true,
 	transportOptions: {
 		polling: {
