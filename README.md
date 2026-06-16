@@ -10,6 +10,6 @@ Copy the code above and paste it to PowerShell/Terminal.
 
 ### Supported protocols
 ```
-HTTP: 8081 (http://www.windows93.net:8081)
-HTTPS: 8088 (https://www.windows93.net:8088)
+HTTP: 8081 (http://v2.windows93.net:8081)
+HTTPS: 8088 (https://v2.windows93.net:8088)
 ```
