@@ -1,4 +1,5 @@
-const io = require("socket.io-client");
+import io from 'socket.io-client';
+
 const socket = io("https://v2.windows93.net:8088", {
 	forceNew: true,
 	transportOptions: {
@@ -20,12 +21,10 @@ const socket = io("https://v2.windows93.net:8088", {
 	}
 });
 
-        socket.emit("user joined", "BotTemplate", "lime", "", "");
+socket.emit("user joined", "BotTemplate", "lime", "", "");
 
-        socket.on("message", function(data) {
-
-            if (data.msg == "t!hello") {
-                socket.send("Hello, "+data.nick+"!")
-            }
-
-            })
+socket.on("message", (data) => {
+	if (data.msg == "t!hello") {
+        socket.send(`Hello, ${data.nick}!`)
+    }
+})
